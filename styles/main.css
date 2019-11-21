@@ -60,7 +60,6 @@ body {
 	 font-size: 5vw;
 	 line-height: 1;
 	 font-weight: 900;
-	 
 }
 
 .hero-section .dancing{
@@ -76,10 +75,10 @@ body {
      margin-inline-end: 0px;
 }
 
- @media screen and (max-width: 580px){
-	 .hero-section .dancing{
-		 font-size: 18px;
-	}
+@media screen and (max-width: 580px){
+	.hero-section .dancing{
+		font-size: 18px;
+   }
 }
 
 .hero-section p span{
@@ -123,8 +122,12 @@ body {
 	 z-index: 1;
 }
 
+.navigation ul li a:hover {
+	background-color: blue;
+}
+
 li {
-	float: left;
+	float:left ;
 }
 
 ul {
@@ -132,7 +135,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #dddddd;
 }
 
 li a {
