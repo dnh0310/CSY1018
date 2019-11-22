@@ -9,34 +9,25 @@
 */
 
 /* (1) */
-.item {
-	text-align: 200px;
-	border-radius: 100%;
-	height: 240px;
-	width: 240px;
-}
-
 .image { /*this is code to make PROFILE PICTURE into circle shape */
-	 border-style: none;
 	 border-radius: 100%;
-	 filter: grayscale(0);
 }
 /* (1) */ 
 
 /* (2) */
-body { /*this is code to make everything located in center */
+body { /*this is code to make everything located in center and BACKGROUND IMAGE */
 	  text-align: center;
+	  background-image: url("https://i.imgur.com/3bMG8DX.jpg");
+	  background-size: cover;
+	  background-position: center;
 }
 
-.hero-section { /* this is code for whole HERO SECTION (included BACKGROUND IMAGE) */
+.hero-section { /* this is code for whole HERO SECTION */
 	 position: relative;
 	 width: 100%;
 	 display: block;
 	 overflow: hidden;
 	 height: 100vh;
-	 background-image: url("https://i.imgur.com/3bMG8DX.jpg");
-	 background-size: cover;
-	 background-position: center;
 }
  
 .hero-section h1{ /* this is code for MAIN HEADER */
@@ -110,9 +101,9 @@ ul { /* this is code for the whole NAVIGATION */
 
 li a { /* this is code for NAVIGATION BUTTON */
 	display: block;
-	color: white;
+	color: black;
 	text-align: none;
-	padding: 14px 16px;
+	padding: 18px 20px;
 	background-color: #dddddd;
 	text-decoration:  none;
 }
@@ -122,6 +113,11 @@ li a { /* this is code for NAVIGATION BUTTON */
 
 /* code for PORTFOLIO PAGE below */
 /* reference for PORTFOLIO PAGE: https://codepen.io/lizcoultersmith/pen/ZEEPGbr */
+
+:root {
+	font-size: 75.5%;
+}
+
 h2 { /* this is code for PORTFOLIO HEADER */
 	font-size: 3.5rem;
 	font-weight: 400;
@@ -137,7 +133,7 @@ hr { /* this is code for hr (create BARRIER) */
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.container {
+.container-2 {
 	width: 96rem;
 	margin: 2rem auto;
 }
@@ -195,10 +191,4 @@ hr { /* this is code for hr (create BARRIER) */
 	font-size: 2.0em;
     padding: 16px 32px;
     font-family: 'Raleway', sans-serif;
-}
-
-.hero-section-2 { /* this is code for background of PORTFOLIO PAGE */
-	background-image: url("https://i.imgur.com/3bMG8DX.jpg");
-	background-size: cover;
-	background-position: center;
 }
