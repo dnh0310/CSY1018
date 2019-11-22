@@ -4,8 +4,11 @@
 }
 
 /* code for landing page below */
-/* referencing for csS code in LANDING PAGE: https://codepen.io/ig_design/pen/JxbVRq?editors=1100 */
+/* referencing for css code in LANDING PAGE: (1) https://codepen.io/lizcoultersmith/pen/KKKEpNy  
+											 (2) https://codepen.io/ig_design/pen/JxbVRq?editors=1100  
+*/
 
+/* (1) */
 .item {
 	text-align: 200px;
 	border-radius: 100%;
@@ -18,7 +21,9 @@
 	 border-radius: 100%;
 	 filter: grayscale(0);
 }
- 
+/* (1) */ 
+
+/* (2) */
 body { /*this is code to make everything located in center */
 	  text-align: center;
 }
@@ -32,13 +37,6 @@ body { /*this is code to make everything located in center */
 	 background-image: url("https://i.imgur.com/3bMG8DX.jpg");
 	 background-size: cover;
 	 background-position: center;
-	 transform: scale(1) rotateX(0);
-	 box-shadow: 0 0 40px rgba(0,0,0,0.2);
-	 -webkit-transition: all 300ms linear;
-	 transition: all 300ms linear;
-	 -webkit-transition-delay: 400ms;
-	 transition-delay: 400ms;
-	 transform-origin: center top;
 }
  
 .hero-section h1{ /* this is code for MAIN HEADER */
@@ -47,73 +45,49 @@ body { /*this is code to make everything located in center */
 	 line-height: 1;
 	 font-weight: 900;
 	 font-family: 'Patrick Hand', cursive;
-	 margin-block-start: 0.67em;
-     margin-block-end: 0.67em;
-     margin-inline-start: 0px;
-     margin-inline-end: 0px;
+	 margin-block-start: 30px;
+     margin-block-end: 30px;
 }
 
 .hero-section .description{ /* this is code for DESCRIPTION */
-	 font-family: 'Dancing Script', cursive;
-	 letter-spacing: 1px;
-	 color: #866BAF;
-	 font-size: 26px;
+	 font-family: 'Sacramento', cursive;
+	 letter-spacing: 2px;
+	 color: rgb(83, 99, 168);
+	 font-size: 35px;
 	 line-height: 1;
 	 font-weight: 700;
-	 margin-block-start: 0.67em;
-     margin-block-end: 0.67em;
-     margin-inline-start: 0px;
-     margin-inline-end: 0px;
+	 margin-block-start: 30px;
+     margin-block-end: 30px;
 }
 
-@media screen and (max-width: 580px){ /* this is code for DESCRIPTION in mobile version */
-	.hero-section .description{
-		font-size: 18px;
+@media screen and (max-width: 580px){ /* this is code for MY DESCRIPTION in mobile version */
+	.image {
+		height: auto;
+		width: 65%;
    }
+    .hero-section .description {
+		font-size: 25px;
+	}
 }
 
 .hero-section p span{ /* this is code for SOCIAL MEDIA ICON */
-	 margin-left: 15px;
-	 margin-right: 15px;
-	 position: relative;
+	 margin-left: 20px;
+	 margin-right: 20px;
 	 display: inline-block;
-	 cursor: pointer;
-	 padding-bottom: 35px;
+
 }
 
-.hero-section p span:before { /* this is code for SOCIAL MEDIA ICON */
-	 position: absolute;
-	 content: '';
-	 bottom: 10px;
-	 left: 50%;
-	 height: 30px;
-	 width: 30px;
-	 margin-left: -15px;
-	 z-index: -1;
-	 background-repeat: no-repeat;
-	 background-position: center;
-	 background-image: url('http://www.ivang-design.com/svg-load/portfolio/down.svg');
-	 background-size: 30px 30px;
-	 opacity: 0.2;
-	 -webkit-transition: all 200ms linear;
-	 transition: all 200ms linear;
- }
- 
-.hero-section p span:hover:before { /* this is code for SOCIAL MEDIA ICON */
-	 opacity: 1;
-	 bottom: 5px;
-}
-
-.section-center { /*this is code to make everything located in center */
+.centering-section { /*this is code to make everything located in center */
 	position: absolute;
 	width: 100%;
-	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 1;
 }
+/* (2) */
 
 /* css for LANDING PAGE above */
+
 
 /* css for NAVIGATION below */
 /* referencing for NAVIGATION code: https://sogo.edu.vn/navigation-bar/ */
@@ -145,18 +119,14 @@ li a { /* this is code for NAVIGATION BUTTON */
 
 /* code for NAVIGATION above */
 
+
 /* code for PORTFOLIO PAGE below */
-
-:root {
-	font-size: 75.5%;
-	font-family: 'Montserrat', sans-serif;
-}
-
+/* reference for PORTFOLIO PAGE: https://codepen.io/lizcoultersmith/pen/ZEEPGbr */
 h2 { /* this is code for PORTFOLIO HEADER */
 	font-size: 3.5rem;
 	font-weight: 400;
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: #3974b79d;
 }
 
@@ -172,7 +142,7 @@ hr { /* this is code for hr (create BARRIER) */
 	margin: 2rem auto;
 }
 
-.gallery-item-2 {
+.gallery-item-2 { /* this is code for create the deep for images */
 	max-width: 100%;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -181,14 +151,14 @@ hr { /* this is code for hr (create BARRIER) */
 	position: relative;
 }
 
-.gallery-2 {
+.gallery-2 { /* this is code for arrange images */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 1.5rem;
 	grid-auto-rows: minmax(150px, auto);
 }
 
-.image-2 { 
+.image-2 { /* this is code for resize images */
 	opacity: 1;
 	display: block;
 	width: 100%;
@@ -198,7 +168,7 @@ hr { /* this is code for hr (create BARRIER) */
 	object-fit: cover;
 }
 
-.middle-2 {
+.middle-2 { /* this is code for hidden name of images */
 	transition: .5s ease;
 	opacity: 0;
 	position: absolute;
@@ -212,7 +182,7 @@ hr { /* this is code for hr (create BARRIER) */
 	filter: grayscale(1);
 }
 
-.gallery-item-2:hover .middle-2 {
+.gallery-item-2:hover .middle-2 { /* this is code to make the name of images appear when you point in the image by mouse */
 	opacity: 1;
 }
 
@@ -220,14 +190,14 @@ hr { /* this is code for hr (create BARRIER) */
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
 
-.text {
+.text { /* this is code for name of images */
 	color: white;
-	font-size: 2.5em;
+	font-size: 2.0em;
     padding: 16px 32px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.hero-section-2 {
+.hero-section-2 { /* this is code for background of PORTFOLIO PAGE */
 	background-image: url("https://i.imgur.com/3bMG8DX.jpg");
 	background-size: cover;
 	background-position: center;
